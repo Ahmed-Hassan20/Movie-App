@@ -5,10 +5,10 @@ import '../../../my_theme.dart';
 class CategoryItem extends StatelessWidget {
   CategoryDM categoryDetails;
   int index;
-  CategoryItem(
-      {required this.categoryDetails,
-      required this.index,
-      required CategoryDM});
+  CategoryItem({
+    required this.categoryDetails,
+    required this.index,
+  });
 
   @override
   Widget build(BuildContext context) {

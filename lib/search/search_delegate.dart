@@ -48,7 +48,8 @@ class MoviesSearchDelegate extends SearchDelegate {
                   ),
                 ),
               );
-            } else if (snapshot.hasError) {
+            }
+            else if (snapshot.hasError) {
               return Column(
                 children: [
                   const Text('Something went wrong'),
@@ -113,7 +114,8 @@ class MoviesSearchDelegate extends SearchDelegate {
                                       style: Theme.of(context)
                                           .textTheme
                                           .titleSmall
-                                          ?.copyWith(color: MyTheme.whiteColor)),
+                                          ?.copyWith(color: MyTheme.whiteColor),
+                                  ),
                                   Text(popularList[index].releaseDate ?? '',
                                       style: Theme.of(context)
                                           .textTheme

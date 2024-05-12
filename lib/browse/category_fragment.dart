@@ -55,7 +55,6 @@ class CategoryFragment extends StatelessWidget {
                           child: CategoryItem(
                             categoryDetails: categoriesList[index],
                             index: index,
-                            CategoryDM: null,
                           ));
                     },
                     itemCount: categoriesList.length,
@@ -68,4 +67,9 @@ class CategoryFragment extends StatelessWidget {
       ],
     );
   }
+}
+
+CategoryDM? selectedCategory;
+void onCategoryClick(CategoryDM newSelectedCategory) {
+  selectedCategory = newSelectedCategory;
 }
